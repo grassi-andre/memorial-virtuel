@@ -8,13 +8,14 @@
 </head>
 <body>
     <header>
-        <a href="#">Logo</a>
-        <ul>
-            <li><a href="index.php" class="active">Accueil</a></li>
-            <li><a href="evenements.php">Evénements</a></li>
-            <li><a href="travaux.php">Travaux</a></li>
-            <li><a href="recherche.php">Thèmes de recherche</a></li>
-        </ul>
+       <h2 class="logo">Logo</h2>
+       <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <button class="btnLogin-popup">Login</button>
+       </nav>
     </header>
 </body>
 </html>

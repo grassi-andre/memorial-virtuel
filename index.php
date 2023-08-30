@@ -10,41 +10,42 @@
     <?php
         include 'header.php';
     ?>
-    <section>
-        <img src="asset/stars.png" id="stars">
-        <img src="asset/moon.png" id="moon">
-        <img src="asset/mountains_behind.png" id="mountains_behind">
-        <h2 id="text">Moon Light</h2>
-        <a href="#" id="btn">Explore</a>
-        <img src="asset/mountains_front.png" id="mountains_front">
-    </section>
-    <div class="sec" id="sec">
-        <h2>Parallax Scrolling Effects</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione tenetur asperiores quaerat architecto eaque iure molestias dignissimos! Consequatur id enim, eveniet animi labore, molestiae libero perspiciatis quam sint laboriosam magni. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni corrupti tenetur tempore reprehenderit perspiciatis sequi iste? Corporis repudiandae sint libero laborum labore, molestiae voluptatibus excepturi, cupiditate, deserunt doloribus sunt omnis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ad hic incidunt expedita sit facilis et nesciunt aspernatur tenetur possimus, dolore alias? Unde rem ipsum atque nulla dolore culpa nobis. <br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione tenetur asperiores quaerat architecto eaque iure molestias dignissimos! Consequatur id enim, eveniet animi labore, molestiae libero perspiciatis quam sint laboriosam magni. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni corrupti tenetur tempore reprehenderit perspiciatis sequi iste? Corporis repudiandae sint libero laborum labore, molestiae voluptatibus excepturi, cupiditate, deserunt doloribus sunt omnis? Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione tenetur asperiores quaerat architecto eaque iure molestias dignissimos! Consequatur id enim, eveniet animi labore, molestiae libero perspiciatis quam sint laboriosam magni. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni corrupti tenetur tempore reprehenderit perspiciatis sequi iste? Corporis repudiandae sint libero laborum labore, molestiae voluptatibus excepturi, cupiditate, deserunt doloribus sunt omnis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ad hic incidunt expedita sit facilis et nesciunt aspernatur tenetur possimus, dolore alias? Unde rem ipsum atque nulla dolore culpa nobis. <br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione tenetur asperiores quaerat architecto eaque iure molestias dignissimos! Consequatur id enim, eveniet animi labore, molestiae libero perspiciatis quam sint laboriosam magni. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni corrupti tenetur tempore reprehenderit perspiciatis sequi iste? Corporis repudiandae sint libero laborum labore, molestiae voluptatibus excepturi, cupiditate, deserunt doloribus sunt omnis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ad hic incidunt expedita sit facilis et nesciunt aspernatur tenetur possimus, dolore alias? Unde rem ipsum atque nulla dolore culpa nobis. <br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione tenetur asperiores quaerat architecto eaque iure molestias dignissimos! Consequatur id enim, eveniet animi labore, molestiae libero perspiciatis quam sint laboriosam magni. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni corrupti tenetur tempore reprehenderit perspiciatis sequi iste? Corporis repudiandae sint libero laborum labore, molestiae voluptatibus excepturi, cupiditate, deserunt doloribus sunt omnis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ad hic incidunt expedita sit facilis et nesciunt aspernatur tenetur possimus, dolore alias? Unde rem ipsum atque nulla dolore culpa nobis. <br><br>
-        </p>
+
+
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close"></ion-icon>
+        </span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label> <input type="checkbox">Remember me
+                </label>
+                    <a href="#">Mot de passe oublié ?</a>
+                </div>
+                <button type="submit" class="btn">Login
+                </button>
+                <div class="login-register">
+                    <p>Vous n'avez pas de compte ? <a href="#" class="register-link"> Crée un compte</a></p>
+                </div>
+            </form>
+        </div>
     </div>
 
-    <script>
-        let stars = document.getElementById('stars');
-        let moon = document.getElementById('moon');
-        let mountains_behind = document.getElementById('mountains_behind');
-        let text = document.getElementById('text');
-        let btn = document.getElementById('btn');
-        let mountains_front = document.getElementById('mountains_front');
-        let header = document.querySelector('header');
 
-        window.addEventListener('scroll', function(){
-            let value = window.scrollY;
-            stars.style.left = value * 0.25 +  'px';
-            moon.style.top = value * 1.05 +  'px';
-            mountains_behind.style.top = value * 0.5 +  'px';
-            mountains_front.style.top = value * 0 +  'px';
-            text.style.marginRight = value * 4 +  'px';
-            text.style.marginTop = value * 1.5 +  'px';
-            btn.style.marginTop = value * 3.5 +  'px';
-            header.style.top = value * 0.5 + 'px';
-        })
-    </script>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 
 </body>
